@@ -1,0 +1,188 @@
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index:1;
+    top:0;
+    width: 100%;
+    background-color:rgba(55, 6, 23, 0.9);
+}
+nav li{
+    display: inline-block;
+    float: left;
+    width: 11%;
+    text-align: center;
+    list-style-type: none;
+    border-left: 1px solid rgb(255, 249, 249);
+    box-sizing: border-box;
+}
+nav li:first-of-type, li:last-of-type{
+    border: none;
+}
+
+nav li:hover{
+    border: none;
+}
+nav li a{
+    display: inline-block;
+    width: 100%;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background, 0.4s;
+}
+nav li a:hover{
+    color: #370617;
+    background-color: rgb(255, 249, 249);
+    text-shadow: 2px 0px 2px #370617;
+}
+nav li:last-of-type{
+    float: right;
+    width:30%; 
+    margin: 5px 1%;
+    text-align: center;
+}
+nav li input{
+    margin:0;
+    padding:0;
+    float: right;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:black;
+    width:89%;
+    height: 35px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgb(255, 249, 249);
+}
+nav li button{ 
+    float: right;
+    background-color: rgb(255, 249, 249);
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    width:10%;
+    height: 35px;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+}
+nav i{
+    color:#370617;
+}
+
+@media (min-width:250px) and (max-width:400px) {
+    nav{
+        margin:0 auto;
+        width: 70%;
+    }
+    nav ul{
+        position: static;
+    }
+    nav li{
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid rgb(255, 249, 249);
+    }
+    nav li:first-of-type{
+        border-bottom: 1px solid rgb(255, 249, 249);
+    }
+    nav li:last-of-type{
+        border: none;
+        width: 85%; 
+        margin: 5px 7.5%;
+    }
+    nav li a{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.8px;
+    }
+    nav li input{
+        /* float:right; */
+        font-size: 0.7rem;
+        line-height: 1rem;
+        height: 25px;
+    }
+    nav li button{ 
+        /* float:right; */
+        font-size: 15px;
+        height: 25px;
+    }
+}
+
+@media (min-width:400px) and (max-width:650px) {
+    nav{
+        margin: 0 auto;
+        width: 60%;
+    }
+    nav ul{
+        position: static;
+    }
+    nav li{
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid rgb(255, 249, 249);
+    }
+    nav li:first-of-type{
+        border-bottom: 1px solid rgb(255, 249, 249);
+    }
+    nav li:last-of-type{
+        border: none;
+        width: 85%; 
+        margin: 10px 7.5%;
+    }
+    nav li a{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 1px;
+    }
+    nav li input{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        height: 28px;
+    }
+    nav li button{ 
+        font-size: 20px;
+        height: 28px;
+    }
+}
+@media(min-width:650px) and (max-width:800px){  
+    nav li{
+        width: 14%;
+    }
+    nav li a{
+        font-size: 1rem;
+        line-height: 40px;
+        letter-spacing: 0.8px;
+    }
+    nav li:last-of-type{
+        width: 35%; 
+    }
+    nav li input{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        height: 30px;
+    }
+    nav li button{ 
+        font-size: 15px;
+        height: 30px;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1000px){  
+    nav li{
+        width: 13%;
+    }
+    nav li:last-of-type{
+        width: 35%; 
+    } 
+    nav li a{
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+    }
+}

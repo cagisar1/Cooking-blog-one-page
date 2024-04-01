@@ -1,0 +1,727 @@
+#divided{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#dividedLeftSide{
+    width: 70%;
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+#dividedLeftSide h3{
+    margin-top:0;
+}
+
+.recipeItem{
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.recipeItemImg{
+    width:45%;
+    height: 250px;
+    box-sizing: border-box;
+}
+.recipeItemText{
+    width: 55%;
+    height: 250px;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0,0.8);
+    text-align: center;
+}
+.recipeItemText p{
+    margin-bottom: 5%;
+}
+.recipeItemText .btn{
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+.recipeItemText .btn:hover{
+    font-size: 1.05rem;
+}
+#allRecipesBtn{
+    letter-spacing: 0.6;
+}
+#moreRecipes{
+    border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 37% 63%, #370617 100%) 0 0 100% 0;
+    margin-top:30px;
+}
+
+#dividedRightSide{
+    width:30%;
+    margin-top: 80px;
+    height: 1560px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+#dividedRightSide h5{
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+h5 span{
+    text-transform: uppercase;
+    font-family: "Lobster Two", sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px #370617;
+    letter-spacing: 1.2px;
+}
+#signUpForm{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+}
+
+#signUpForm form{
+    width:100%;
+    text-align: center;
+}
+#signUpForm input{
+    margin: 15px 0;
+    padding:0 10px;
+    width: 85%;
+    height:40px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    background-color: rgb(255, 249, 249);
+    color:black;
+    font-size: 1rem;
+}
+#signUpForm input:last-of-type{
+    margin-top:0;
+}
+form .btn{
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: none;
+    border:none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    background-color: rgb(255, 186, 8);
+}
+form .btn:hover{
+    font-size:1.1rem;
+}
+#categories{
+    padding-bottom: 50px;
+    margin:0 auto;
+    width: 90%;
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+}
+#categories ul{
+    margin:0 auto;
+    padding:0;
+    width:90%;
+}
+#categories li{
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 1.5px solid rgb(255, 249, 249);
+}
+#categories li:last-of-type{
+    border-bottom: none;
+}
+#categories li a{    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 10%;
+    width: 85%;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background, 0.4s;
+    background-color: rgba(55, 6, 23, 0.9);
+}
+#categories a:hover{
+    color: #370617;
+    background-color: rgb(255, 249, 249);
+    text-shadow: 2px 0px 2px #370617;
+}
+#categories a p{
+    padding: 7px;
+    margin:0;
+    width:20px;
+    font-size: 1.1rem;
+    border-radius:50%;
+    color: inherit;
+}
+#top{
+    margin: 50px auto;
+    width: 100%;
+    height: fit-content;
+}
+#top10{
+    margin: 0 auto;
+    height: 420px;
+    width: 300px;
+    min-height: 400px;
+    background-image: url("imgs/sideBackground.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#band{
+    width:100%;
+    padding:50px 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    border-top: 1.5px solid rgba(0,0,0,0);
+    border-bottom: 1.5px solid rgba(0,0,0,0);
+}
+#band:hover{
+    background-color:rgba(0,0,0,0.85);
+    border-top: 1.5px solid #ffba08;
+    border-bottom: 1.5px solid #ffba08;
+}
+#band h5{
+    margin:0;
+    width:90%;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #ffba08;
+    text-shadow:1px 1px 5px #ffba08,
+                2px 2px 3px black;
+}
+
+@media(min-width:250px) and (max-width:400px){
+    #divided{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #dividedLeftSide{
+        width: 100%;
+    }   
+    h3{
+        margin: 20px auto 10px auto;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    .recipeItem{
+        width: 100%;
+        height: 130px;
+        margin: 10px 0;
+    }
+    .recipeItemImg{
+        width: 50%;
+        height: 130px;
+    }
+    .recipeItemText{
+        width: 50%;
+        height: 130px;
+    }
+    .recipeItemText h4{
+        margin: 10px auto 5px auto;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+        letter-spacing: 0.7px;
+        border-width: 1px;
+    }
+    .recipeItemText p{
+        margin-bottom: 5px;
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+        letter-spacing: 0.4px;
+    }
+
+    .recipeItemText .btn{
+        padding: 3px 10px;
+        font-size: 0.45rem;
+    }
+    .recipeItemText .btn:hover{
+        font-size: 0.55rem;
+    }
+    .btn{
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+    .btn:hover{
+        font-size: 0.8rem;
+    }
+    #dividedLeftSide #moreRecipes{
+        margin-top: 15px;
+        height: 10px;
+        border-width: 1px;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 30% 70%, #370617 100%) 0 0 100% 0;
+    }
+
+    #dividedRightSide{
+        width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+    #dividedRightSide h5{
+        margin: 0 0 20px 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.9px;
+    }
+    h5 span{
+        font-size: 1.7em;
+        letter-spacing: 1.5px;
+    }
+    #signUpForm{
+        height: 260px;
+        margin: 0 auto 20px auto;
+    }    
+    #signUpForm input{
+        margin: 10px 0;
+    }
+    form .btn{
+        margin-top: 10px;
+        padding: 3px 12px;
+        font-size: 1rem;
+    }
+    form .btn:hover{
+       font-size: 1.1rem;
+    }
+
+    #categories{
+        padding-bottom: 40px;
+        margin: 30px auto 20px auto;
+    }
+    #categories li a{    
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+    #categories a p{
+        padding: 5px;
+        width: 15px;
+        font-size: 1rem;
+    }
+    #top{
+        padding-bottom: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+    }
+    #top10{
+        min-width: 75%;
+    }
+    #band h5{
+        font-size: 1.7rem;
+    }
+}
+@media(min-width:400px) and (max-width:650px){
+    #divided{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #dividedLeftSide{
+        width: 100%;
+    }   
+    h3{
+        margin: 20px auto 10px auto;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    .recipeItem{
+        width: 100%;
+        height: 160px;
+        margin: 10px 0;
+    }
+    .recipeItemImg{
+        width: 50%;
+        height: 160px;
+    }
+    .recipeItemText{
+        width: 50%;
+        height: 160px;
+    }
+    .recipeItemText h4{
+        margin: 10px auto;
+        padding-bottom: 10px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.9px;
+    }
+    .recipeItemText p{
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+        letter-spacing: 0.6px;
+    }
+
+    .recipeItemText .btn{
+        padding: 3px 10px;
+        font-size: 0.65rem;
+    }
+    .recipeItemText .btn:hover{
+        font-size: 0.7rem;
+    }
+    .btn{
+        padding: 6px 10px;
+        font-size: 1rem;
+    }
+    .btn:hover{
+        font-size: 1.1rem;
+    }
+    #moreRecipes{
+        margin-top: 15px;
+        height: 10px;
+        border-width: 1.5px;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 30% 70%, #370617 100%) 0 0 100% 0;
+    }
+
+    #dividedRightSide{
+        width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+    #dividedRightSide h5{
+        margin: 0 0 15px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    h5 span{
+        font-size: 1.85em;
+        letter-spacing: 1.7px;
+    }
+    #signUpForm{
+        height: 300px;
+        margin: 0 auto 20px auto;
+    }
+    
+    #signUpForm input{
+        margin: 15px 0;
+    }
+    form .btn{
+        margin-top: 10px;
+        padding: 4px 14px;
+        font-size: 1.2rem;
+    }
+    form .btn:hover{
+       font-size: 1.3rem;
+    }
+
+    #categories{
+        width:80%;
+        padding-bottom: 40px;
+        margin: 50px auto 20px auto;
+    }
+    #categories li a{    
+        font-size: 1.3rem;
+        line-height: 4rem;
+    }
+    #categories a p{
+        padding: 5px;
+        width: 20px;
+        font-size: 1.3rem;
+    }
+    #top{
+        padding-bottom: 40px;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+    }
+    #band h5{
+        font-size: 1.7rem;
+    }
+}
+
+@media(min-width:650px) and (max-width:800px){
+    #divided{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #dividedLeftSide{
+        width: 100%;
+    }   
+    h3{
+        margin: 30px auto 20px auto;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+    .recipeItem{
+        width: 100%;
+        height: 220px;
+        margin: 10px 0;
+    }
+    .recipeItemImg{
+        width: 50%;
+        height: 220px;
+    }
+    .recipeItemText{
+        width: 50%;
+        height: 220px;
+    }
+    .recipeItemText h4{
+        margin: 15px auto;
+        padding-bottom: 10px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    .recipeItemText p{
+        margin-bottom: 15px;
+        line-height: 1.2rem;
+        letter-spacing: 0.8px;
+    }
+
+    .recipeItemText .btn{
+        padding: 4px 15px;
+        font-size: 0.8rem;
+    }
+    .recipeItemText .btn:hover{
+        font-size: 0.85rem;
+    }
+    .btn{
+        padding: 7px 12px;
+        font-size: 1.1rem;
+    }
+    .btn:hover{
+        font-size: 1.2rem;
+    }
+    #moreRecipes{
+        margin-top: 15px;
+        height: 10px;
+        border-width: 1.5px;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 30% 70%, #370617 100%) 0 0 100% 0;
+    }
+
+    #dividedRightSide{
+        width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+    #dividedRightSide h5{
+        margin: 0 0 15px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    h5 span{
+        font-size: 2em;
+        letter-spacing: 1.7px;
+    }
+    #signUpForm{
+        height: 300px;
+        margin: 0 auto 20px auto;
+    }
+    
+    #signUpForm input{
+        width: 75%;
+        margin: 15px 0;
+    }
+    form .btn{
+        margin-top: 10px;
+        padding: 4px 14px;
+        font-size: 1.2rem;
+    }
+    form .btn:hover{
+       font-size: 1.3rem;
+    }
+
+    #categories{
+        width:80%;
+        padding-bottom: 40px;
+        margin: 50px auto 20px auto;
+    }
+    #categories li a{    
+        padding: 0 5%;
+        font-size: 1.45em;
+        line-height: 4rem;
+    }
+    #categories a p{
+        padding: 5px;
+        width: 20px;
+        font-size: 1.3rem;
+    }
+    #top{
+        padding-bottom: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+    }
+    #top10{
+        width:400px;
+        height:550px;
+    }
+    #band h5{
+        font-size: 1.9rem;
+    }
+}
+
+@media(min-width:800px) and (max-width:1100px){
+    #divided{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #dividedLeftSide{
+        width: 100%;
+    }   
+    h3{
+        margin: 30px auto 20px auto;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+    .recipeItem{
+        width: 100%;
+        height: 280px;
+        margin: 10px 0;
+    }
+    .recipeItemImg{
+        width: 45%;
+        height: 280px;
+    }
+    .recipeItemText{
+        width: 55%;
+        height: 280px;
+    }
+    .recipeItemText h4{
+        padding-bottom: 15px;
+        line-height: 1.5rem;
+    }
+    .recipeItemText p{
+        margin-bottom: 5%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .recipeItemText .btn{
+        padding: 7px 15px;
+        font-size: 1rem;
+    }
+    .recipeItemText .btn:hover{
+        font-size: 1.05rem;
+    }
+    #moreRecipes{
+        margin-top: 15px;
+        height: 10px;
+        border-width: 1.5px;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 35% 65%, #370617 100%) 0 0 100% 0;
+    }
+
+    #dividedRightSide{
+        width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+    #dividedRightSide h5{
+        margin: 0 0 15px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    h5 span{
+        font-size: 2em;
+        letter-spacing: 1.7px;
+    }
+    #signUpForm{
+        height: 300px;
+        margin: 0 auto 20px auto;
+    }
+    
+    #signUpForm input{
+        height: 50px;
+        width: 75%;
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+    form .btn{
+        margin-top: 10px;
+        padding: 4px 14px;
+        font-size: 1.2rem;
+    }
+    form .btn:hover{
+       font-size: 1.3rem;
+    }
+
+    #categories{
+        width:80%;
+        padding-bottom: 40px;
+        margin: 50px auto 20px auto;
+    }
+    #categories li a{    
+        padding: 0 5%;
+        font-size: 1.45em;
+        line-height: 4rem;
+    }
+    #categories a p{
+        padding: 5px;
+        width: 20px;
+        font-size: 1.3rem;
+    }
+    #top{
+        padding-bottom: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #370617, rgba(0,0,0,0) 45% 55%, #370617 100%) 0 0 100% 0;
+    }
+    #top10{
+        width:400px;
+        height:550px;
+    }
+    #band h5{
+        font-size: 1.9rem;
+    }
+}
